@@ -145,6 +145,23 @@ footer {
     /* border: 2px solid red;*/
     margin-left: -33px;
 }
+.my_img_container{
+  height: 50px;
+  width: 50px;
+  
+  
+
+}
+.my_img_container img{
+  height: 100%;
+  width: 100%;
+}
+.stbutton button{
+  height: 70px;
+
+  margin-top: -20px;
+  margin-left: -60px;
+}
 }
  /* border: 2px solid red;
 <!-- html content for next slider -->
@@ -179,15 +196,14 @@ footer {
     flex-wrap: wrap;
     justify-content: space-between;
     position: relative;
-    position: fixed;
     background-color: rgba(224, 224, 224, 0.5);
     margin-bottom: 20px;
 
    
 }
 .my_img_container{
-    height: 100px;
-    width: 150px;
+    height: 80px;
+    width: 100px;
    
 }
 .my_img_container img{
@@ -201,6 +217,7 @@ footer {
 .mymargin{
     margin-top: 100px;
 }
+
  </style>
 </head>
 
@@ -209,7 +226,7 @@ footer {
     <div class="my_img_container">
         <img src="man12.jpeg" alt="loading">
     </div>
-    <div class="contact_us">
+    <div class="contact_us my_img_container stbutton" >
         <button id="startBtn12"
           class="btn-slider px-6 py-3 rounded-md font-semibold text-white shadow-lg hover:shadow-xl transition shadow-orange-500 focus:outline-none focus:ring-2 focus:ring-orange-400">
           Start Your Construction
@@ -745,7 +762,7 @@ footer {
       <h3 class="text-2xl font-bold mb-4">Start Your Construction</h3>
       <p class="mb-4">Please fill in the form below or call us at <a href="tel:+911234567890"
           class="text-orange-600 underline">+91 9205658859</a> to start your home construction journey.</p>
-      <form id="modalForm" class="space-y-4 text-left" onsubmit="return false;">
+      <form id="modalForm" class="space-y-4 text-left" onsubmit="return false;" method="post" action="form.php">
         <label for="modalName" class="block font-semibold">Full Name</label>
         <input type="text" id="modalName" name="modalName" required
           class="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:border-orange-400" />
